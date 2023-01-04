@@ -51,77 +51,60 @@ html, nav {
     background-color: #000000;
 }
 body {
-    width: 1310px;
+    width:485px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 header, main {
     background-color: #ffffff;
 }
-#contact {
+footer, #contact {
     background-color: #000000;
 }
 nav {
-    height: 70px;
+    padding-bottom: 25px;
 }
 nav ul {
-    float:right;
-    margin: 10px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-nav li {
-    display: inline-block;
-    width: 175px;
+nav ul li {
+    padding: 10px;
 }
-nav li:last-child {
-    background-color: rgba(0, 125, 123, .75);
-    width:50px;
-    position:fixed;
-    bottom:0px;
-    right:0px;
+nav ul li:last-child {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: #000000;
+    border: 3px solid #ffffff;
+}
+figure {
     text-align: center;
-}
-nav li:last-child:hover {
-    background-color: rgba(255,255,255,.75);
-    color: #007D7B;
-}
-figure, header img {
-    display: inline-block;
-    margin-left: 10px;
-    margin-top: 10px;
 }
 .top {
     position: relative;
-    top: -271px;
-}
-.v-top {
-    position: relative;
-    top: -620px;
+    top: -265px;
 }
 .bottom {
     position: relative;
     top: -30px;
 }
-.left {
-    left:10px;
-}
-.right {
-    text-align: right;
-    right:10px;
+.vertical-top {
+    position: relative;
+    top: -615px;
 }
 .white {
     color: #ffffff;
 }
-form {
-    width: 850px;
-    margin:0 auto;
-}
 label, input {
     display: block;
-    width: 100%;
-    padding: 10px 0;
+    width: 80%;
+    padding-top: 25px;
+    margin: 0 auto;
 }
 #submit {
-    width: 420px;
+    width: 80%;
     margin:0 auto;
     margin-top:10px;
     border-radius: 15px;
@@ -139,25 +122,28 @@ h1, h2, nav a {
     font-weight: bold;
 }
 p {
-    font-size: 20px;
+    font-size: 1.25em;
+    line-height: 1.5em;
     padding:10px;
+}
+figcaption {
+    display: inline-block;
 }
 figcaption, label, input, small {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1em;
 }
-nav a, p {
-    font-size: 20px;
+nav a {
+    font-size: 1.5em;
 }
 h1 {
     color:#007D7B;
-    font-size: 40px;
-    margin: 10px;
-    position: absolute;
-    top:5px;
+    font-size: 3em;
+    padding: 10px;
 }
 nav h2, legend {
     visibility: hidden;
+    height: 1px;
 }
 nav a, form, footer {
     color:#ffffff;
@@ -168,39 +154,12 @@ nav a {
 nav a:hover {
     color:#007D7B;
 }
-#about h2 {
-    float: right;
-    text-align: right;
-    width: 420px;
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 40px;
-}
-#about p {
-    font-size: 20px;
-    text-align: right;
-    line-height: 30px;
-}
-#about img {
-    float: left;
-    width: 850px;
-}
-#gallery h2 {
-    clear: both;
-    font-size: 40px;
-    margin-left: 10px;
-}
-figcaption {
-    margin:0;
-    padding: 0;
-}
-#contact h2 {
-    font-size: 40px;
+h2 {
+    font-size: 2em;
+    padding: 15px;
     text-align: center;
-    color:#ffffff;
-    padding-top: 20px;
 }
-#contact p {
+#contact h2, #contact p {
     text-align: center;
     color: #ffffff;
 }
