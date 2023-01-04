@@ -66,8 +66,8 @@ nav {
 }
 nav ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
 }
 nav ul li {
     padding: 10px;
@@ -104,9 +104,8 @@ label, input {
     margin: 0 auto;
 }
 #submit {
-    width: 80%;
-    margin:0 auto;
-    margin-top:10px;
+    width: 50%;
+    margin-top:25px;
     border-radius: 15px;
     background-color: #007D7B;
     border: 0;
@@ -167,4 +166,25 @@ h2 {
     color: #007D7B;
     font-weight: bold;
     padding: 10px;
+}
+@media screen and (min-width:880px){
+    body {
+        width: 880px;
+    }
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:1300px){
+    body {
+        width: 1300px;
+    }
+    nav ul {
+        justify-content: right;
+    }
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
